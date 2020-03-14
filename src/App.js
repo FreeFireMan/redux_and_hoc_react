@@ -1,26 +1,35 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from "./components/header/Header";
+import Product from "./components/product/Product";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    // constructor(props) {
+    //     super(props)
+    // }
+    // addItemToCart =(id)=>{
+    //     const {products} = this.state
+    //     const copyProducts = [...products]
+    //     const indexOFCarrentItem = products.findIndex(el=> el.id === id)
+    //     copyProducts[indexOFCarrentItem].isAddedToCart = !copyProducts[indexOFCarrentItem].isAddedToCart;
+    //     const updateCount = copyProducts.filter(el=>el.isAddedToCart)
+    //     this.setState({
+    //         products: copyProducts,
+    //         count: updateCount.length
+    //     })
+    //
+    // }
+    render() {
+        console.log(this.state);
+        return (
+            <div className="App">
+                <Header />
+                    {/*<Product b={'bbbbbbbbb'} />*/}
+                {Product({b:'bbbbb'})}
+            </div>
+        );
+    }
 }
 
 export default App;

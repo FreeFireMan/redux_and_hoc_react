@@ -1,0 +1,2 @@
+export const TOGGLE_ITEM_TO_CART = 'TOGGLE_ITEM_TO_CART'
+export const ON_POST_LOADED = 'ON_POST_LOADED'
