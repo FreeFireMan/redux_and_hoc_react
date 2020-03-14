@@ -1,0 +1,9 @@
+.product-wraper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item{
+    border: red solid 2px;
+    width: 600px;
+}
